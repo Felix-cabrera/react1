@@ -1,0 +1,52 @@
+.container{
+    min-height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2em;
+}
+.container_title{
+    color: black;
+    background-color: transparent;
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 25px, rgba(255, 255, 255) 25px, rgba(255, 255, 255) 50px);    
+    background-clip: text;
+    animation: color 5s linear infinite;
+    background-size: 200%; 
+    font-size: 2.25rem;
+    text-shadow: 0.15em 0.15em #1656634e;
+}
+@keyframes color {
+    from {
+        background-position: 0% 50%;
+    }
+
+    to {
+        background-position: 100% 50%;
+    }
+}
+.container_phrase {
+    width: 100%;
+    max-width: 30em;
+    font-size: 1.2rem;
+    background-color: rgb(255, 255, 255,0.7);
+    padding: 1.5em 2em;
+    line-height: 1.4;
+    border-radius: 0.7em;
+    text-align: center;
+}
+.container_btn {
+    padding: 0.8em 1.2em;
+    border-radius:0.7em;
+    font-size: 1.2rem;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: all 200ms ease;
+}
+.container_btn:hover{
+    opacity: 1;
+    transform: scale(1.1);
+    box-shadow: 0 0 0 0.8 #0005;
+}
