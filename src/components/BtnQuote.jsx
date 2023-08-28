@@ -7,7 +7,7 @@ const BtnQuote = ({setQuote, phrases, setNumberBg}) => {
     }
   return (
     
-    <button className='container_btn' onClick={handleRandomPhrase}>Other phrase</button>
+    <button className='container_btn' onClick={handleRandomPhrase}> <img src="/dados.png" alt="dados" className="dados" /> Other phrase</button>
   )
 }
 
